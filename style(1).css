@@ -1,0 +1,192 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+button {
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  display: flex;
+  width: 90%;
+  height: 15vh;
+  margin: auto;
+  align-items: center;
+}
+
+.logo-container,
+.nav-links,
+.cart {
+  display: flex;
+}
+
+.logo {
+  font-weight: 400;
+  margin: 5px;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+nav {
+  flex: 2;
+}
+
+.nav-links {
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-link {
+  color: #5f5f79;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.cart {
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.introduction {
+  flex: 1;
+}
+
+.cover {
+  flex: 1;
+}
+
+.intro-text h1 {
+  font-size: 44px;
+  font-weight: 500;
+  background: linear-gradient(to right, #494964, #6f6f89);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro-text p {
+  margin-top: 5px;
+  font-size: 22px;
+  color: #585772;
+}
+
+.cta {
+  padding: 50px 0px 0px 0px;
+}
+
+.cta-select {
+  border: 2px solid #000000;
+  background: transparent;
+  color: #000000;
+  width: 140px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.cta-add {
+  border: 2px solid #000000;
+  background: transparent;
+  color: #000000;
+  width: 140px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 30px 0px 0px 30px;
+}
+
+.presentation {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+  align-items: center;
+}
+
+.cover img {
+  height: 60vh;
+  filter: drop-shadow(0px 10px 10px black);
+  animation: drop 3s ease;
+}
+
+.big-eclipse {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: -1;
+}
+
+.mid-eclipse {
+  position: absolute;
+  top: 5%;
+  right: 40%;
+  z-index: -1;
+}
+
+.small-eclipse {
+  position: absolute;
+  top: 5%;
+  right: 70%;
+  z-index: -1;
+}
+
+.laptop-select {
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .presentation {
+    flex-direction: column;
+  }
+  .introduction {
+    margin-top: 5vh;
+    text-align: center;
+  }
+  .intro-text h1 {
+    font-size: 30px;
+  }
+  .intro-text p {
+    font-size: 18px;
+  }
+  .cta {
+    padding: 10px 0px 0px 0px;
+  }
+  .laptop-select {
+    bottom: 5%;
+    right: 50%;
+    width: 50%;
+    transform: translate(50%, 5%);
+  }
+  .cover img {
+    height: 80%;
+  }
+  .big-eclipse,
+  .mid-eclipse,
+  .small-eclipse {
+    opacity: 0.2;
+  }
+}
+
+@media screen and (max-width: 360px) {
+}
